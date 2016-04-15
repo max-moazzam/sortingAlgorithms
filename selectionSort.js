@@ -9,7 +9,7 @@ function swap(array, index1, index2) {
 
 function selectionSort(array) {
 	for (i=0; i < array.length; i++) {				//Each number of the array will be examined
-		indexOfMinimum = i;							//The original index for the minimum number will be the first number
+		indexOfMinimum = i;					//The original index for the minimum number will be the first number
 		
 		for (j = i+1; j < array.length; j++) {		//Each number is compared against all the other following numbers in the array
 			if (array[j] < array[indexOfMinimum]) {	//If a number is smaller than what is currently the minimum, the index of the minimum is updated
