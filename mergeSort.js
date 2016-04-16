@@ -29,15 +29,15 @@ function merge(leftUnsorted, rightUnsorted) {						//Function takes in two param
 		}
 
 		else {									//If the first number of the right array is smaller than that of the left, it's cut out and put into the sorted array
-			sorted.push(rightUnsorted.shift())
+			sorted.push(rightUnsorted.shift());
 		}
 	}
 
-	while (leftUnsorted.length) {							//If the right array has no more numbers, the remaining numbers of the left array are added
+	while (leftUnsorted.length) {							//If only the left array has remaining numbers, the rest of the array is added to the sorted array
 		sorted.push(leftUnsorted.shift());
 	}
 
-	while (rightUnsorted.length) {							//If the left array has no more numbers, the remaining numbers of the right array are added
+	while (rightUnsorted.length) {							//If pnly the right array has reamining numbers, the rest of the array is added to the sorted array
 		sorted.push(rightUnsorted.shift());
 	}
 
