@@ -4,13 +4,13 @@
 //Algorithm has a complexity of O(n) 
 
 function randomizeArray(array) {
-	var toShuffle = array.length;
+	var toShuffle = array.length - 1;
 	var randomIndex;
 	var temp;
 
 	//While there are still elements left to shuffle
 	while(toShuffle) {
-		//Pick a random element out of all the elements to be shuffled
+		//Pick a random element out of all the elements remaining to be shuffled
 		randomIndex = Math.floor(Math.random() * toShuffle);
 		
 		//Swap that random element with the currently selected spot at the end of the array
